@@ -4,6 +4,15 @@ class Traveler{
         this._food = 1
         this._isHealthy = true
     }
+    set food(value){
+        if(typeof food === 'number'){
+            this._food = value
+        }
+    }
+    get food(){
+        return this._food
+    }
+
     hunt(){
         return this._food += 2
     }
